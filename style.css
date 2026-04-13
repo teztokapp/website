@@ -759,7 +759,8 @@ section { padding: 100px 0; }
   section { padding: 72px 0; }
 
   .nav-links { display: none; }
-
+  .nav-cta { display: none; }
+  .nav-inner { justify-content: center; }
   .features-grid { grid-template-columns: 1fr; }
   .feature-card--wide { grid-column: span 1; }
 
