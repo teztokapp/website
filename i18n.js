@@ -36,7 +36,7 @@ const translations = {
     "panel-abstract-desc": "Tap \"Read abstract\" to reveal the full text in a bottom sheet. Tap the document icon to open the original paper in a browser.",
     "panel-sources-title": "Choose your source",
     "panel-sources-desc": "Switch between OpenAlex, Semantic Scholar, CORE, or Crossref from Settings. Each provider surfaces different research.",
-    
+
     "panel-feed-l1": "Full-bleed contextual background image",
     "panel-feed-l2": "Snap-scroll with haptic feedback",
     "panel-feed-l3": "Open full paper in one tap",
@@ -52,7 +52,7 @@ const translations = {
     "panel-sources-l1": "5 open-access academic providers",
     "panel-sources-l2": "No account needed",
     "panel-sources-l3": "YÖKTez via backend for Turkish theses",
-    
+
     "sec-sources-title": "Open-access APIs,<br>unified in one feed",
     "sec-sources-desc": "Rather than scraping a single database, TezTok integrates six open-access APIs — enabling cross-domain discovery across disciplines.",
     "src-yok-title": "YÖKTez",
@@ -94,10 +94,10 @@ const translations = {
     "nav-motivation": "Motivasyon",
     "nav-app": "Uygulama",
     "nav-sources": "Kaynaklar",
-    "nav-cta-btn": "GitHub'da Gör",
+    "nav-cta-btn": "GitHub'da Görüntüle",
     "hero-title": "Akademik Araştırmalar,<br>Gezinmeye Hazır",
     "hero-subtitle": "Kısa formlu etkileşim kalıpları aracılığıyla akademik tezleri ve makaleleri keşfetmek için mobil öncelikli bir arayüz; araştırmalara giriş engelini düşürmek için tanıdık kaydırmaya dayalı deneyimi uyarlar.",
-    "hero-github-btn": "GitHub'da Gör",
+    "hero-github-btn": "GitHub'da Görüntüle",
     "hero-see-app-btn": "Uygulamayı Aç",
     "sec-features-title": "Mobil çağ için<br>araştırma keşfi",
     "sec-features-desc": "Açık erişimli akademik içerikleri bir araya getiren ve dikey kaydırmalı bir akış halinde sunan bir uygulama; aktif arama yerine pasif keşif için optimize edilmiştir.",
@@ -126,7 +126,7 @@ const translations = {
     "panel-abstract-desc": "Tam metni okumadan önce alt panelden makalenin özetini görüntülemek için \"Özeti oku\" seçeneğine dokunun.",
     "panel-sources-title": "Kaynakları yapılandırın",
     "panel-sources-desc": "Ayarlar menüsünden API'ler arasında geçiş yapın. Seçtiğiniz kaynak neyi destekliyorsa o özellikleri görebilirsiniz.",
-    
+
     "panel-feed-l1": "Tam ekran kaplayan bağlamsal arka plan",
     "panel-feed-l2": "Haptik geri bildirimli pürüzsüz kaydırma",
     "panel-feed-l3": "Tek dokunuşla tam makaleyi açın",
@@ -142,7 +142,7 @@ const translations = {
     "panel-sources-l1": "5 farklı açık erişimli platform",
     "panel-sources-l2": "Hesap veya üyelik gerektirmez",
     "panel-sources-l3": "Türkçe tezler için YÖKTez uyumluluğu",
-    
+
     "sec-sources-title": "Açık erişimli API'ler,<br>tek bir akışta",
     "sec-sources-desc": "TezTok, tek bir veritabanını kazımak yerine altı farklı açık erişim API'sini bütünleştirerek çeşitli disiplinler arası keşiflere olanak tanır.",
     "src-yok-title": "YÖKTez",
@@ -272,17 +272,17 @@ const domMap = {
 
 function setLang(lang) {
   if (!translations[lang]) return;
-  
+
   localStorage.setItem('teztok-lang', lang);
   document.documentElement.lang = lang;
-  
+
   const selects = document.querySelectorAll('.lang-select');
   selects.forEach(select => {
     if (select.value !== lang) {
       select.value = lang;
     }
   });
-  
+
   const strings = translations[lang];
   for (const key in domMap) {
     const el = domMap[key]();
