@@ -313,6 +313,12 @@ section { padding: 100px 0; }
   margin-bottom: 48px;
   border-bottom: 1px solid var(--border);
   padding-bottom: 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.showcase-tabs::-webkit-scrollbar {
+  display: none;
 }
 
 .tab {
@@ -321,6 +327,7 @@ section { padding: 100px 0; }
   border: none;
   border-bottom: 2px solid transparent;
   margin-bottom: -1px;
+  white-space: nowrap;
   color: var(--text2);
   font-family: var(--font);
   font-size: 0.875rem;
