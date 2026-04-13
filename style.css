@@ -746,6 +746,17 @@ section { padding: 100px 0; }
   gap: 10px;
 }
 
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2px;
+}
+
+.footer-lang {
+  display: none;
+}
+
 .footer-logo {
   font-size: 1.1rem;
   font-weight: 800;
@@ -793,6 +804,8 @@ section { padding: 100px 0; }
 
   .nav-links { display: none; }
   .nav-cta { display: none; }
+  .header-lang { display: none !important; }
+  .footer-lang { display: flex; }
   .nav-inner { justify-content: center; }
   .features-grid { grid-template-columns: 1fr; }
   .feature-card--wide { grid-column: span 1; }

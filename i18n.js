@@ -151,10 +151,12 @@ function setLang(lang) {
   localStorage.setItem('teztok-lang', lang);
   document.documentElement.lang = lang;
   
-  const select = document.getElementById('lang-select');
-  if (select && select.value !== lang) {
-    select.value = lang;
-  }
+  const selects = document.querySelectorAll('.lang-select');
+  selects.forEach(select => {
+    if (select.value !== lang) {
+      select.value = lang;
+    }
+  });
   
   const strings = translations[lang];
   for (const key in domMap) {

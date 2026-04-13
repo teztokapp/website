@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TezTok — Mobile-First Academic Research Discovery</title>
-  <meta name="description" content="TezTok is a mobile-first app for browsing academic theses and papers through a vertical swipe feed. Powered by OpenAlex, Semantic Scholar, CORE, Crossref, and YÖKTez." />
+  <meta name="description"
+    content="TezTok is a mobile-first app for browsing academic theses and papers through a vertical swipe feed. Powered by OpenAlex, Semantic Scholar, CORE, Crossref, and YÖKTez." />
   <meta property="og:title" content="TezTok — Mobile-First Academic Research Discovery" />
-  <meta property="og:description" content="Discover academic theses through a vertical swipe feed. Powered by YÖKTez, OpenAlex, and more." />
+  <meta property="og:description"
+    content="Discover academic theses through a vertical swipe feed. Powered by YÖKTez, OpenAlex, and more." />
   <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
   <!-- Navigation -->
@@ -29,10 +33,10 @@
       </ul>
       <a href="#download" class="nav-cta" id="nav-cta-btn">View on GitHub</a>
 
-      <div class="lang-switcher">
-        <select id="lang-select" class="lang-select" onchange="setLang(this.value)">
-          <option value="en">English (EN)</option>
-          <option value="tr">Türkçe (TR)</option>
+      <div class="lang-switcher header-lang">
+        <select class="lang-select" onchange="setLang(this.value)">
+          <option value="en">English</option>
+          <option value="tr">Türkçe</option>
         </select>
       </div>
     </div>
@@ -42,10 +46,13 @@
   <section class="hero" id="hero">
     <div class="hero-content">
       <h1 class="hero-title">Academic Research,<br>Built for Browsing</h1>
-      <p class="hero-subtitle">A mobile-first interface for exploring academic theses and papers through short-form interaction patterns — applying familiar scroll-based UX to lower the entry barrier to research discovery.</p>
+      <p class="hero-subtitle">A mobile-first interface for exploring academic theses and papers through short-form
+        interaction patterns — applying familiar scroll-based UX to lower the entry barrier to research discovery.</p>
       <div class="hero-actions">
-        <a href="https://github.com/teztokapp/app" target="_blank" rel="noopener noreferrer" class="btn-primary" id="hero-github-btn">View on GitHub</a>
-        <a href="https://teztok-app.aliozcan.me" target="_blank" rel="noopener noreferrer" class="btn-secondary" id="hero-see-app-btn">Open App</a>
+        <a href="https://github.com/teztokapp/app" target="_blank" rel="noopener noreferrer" class="btn-primary"
+          id="hero-github-btn">View on GitHub</a>
+        <a href="https://teztok-app.aliozcan.me" target="_blank" rel="noopener noreferrer" class="btn-secondary"
+          id="hero-see-app-btn">Open App</a>
       </div>
     </div>
 
@@ -66,28 +73,33 @@
     <div class="container">
       <div class="section-header">
         <h2 class="section-title">Research discovery<br>for the mobile era</h2>
-        <p class="section-desc">An app that aggregates open-access academic content and presents it through a vertical snap-scroll feed — optimised for passive discovery rather than active search.</p>
+        <p class="section-desc">An app that aggregates open-access academic content and presents it through a vertical
+          snap-scroll feed — optimised for passive discovery rather than active search.</p>
       </div>
 
       <div class="features-grid">
         <div class="feature-card" id="feature-feed">
           <h3 class="feature-title">Vertical swipe feed</h3>
-          <p class="feature-desc">Snap-scroll through thesis cards. Each card surfaces title, authors, source, year, and a teaser of the abstract — full text one tap away.</p>
+          <p class="feature-desc">Snap-scroll through thesis cards. Each card surfaces title, authors, source, year, and
+            a teaser of the abstract — full text one tap away.</p>
         </div>
 
         <div class="feature-card" id="feature-bookmarks">
           <h3 class="feature-title">Save &amp; revisit</h3>
-          <p class="feature-desc">Heart any thesis to save it to your Likes library. Persisted locally — your reading list is always there when you come back.</p>
+          <p class="feature-desc">Heart any thesis to save it to your Likes library. Persisted locally — your reading
+            list is always there when you come back.</p>
         </div>
 
         <div class="feature-card" id="feature-topics">
           <h3 class="feature-title">Browse by topic</h3>
-          <p class="feature-desc">Filter by academic discipline — Engineering, Social Sciences, Medicine, CS, and more. Alphabetical jump bar makes switching fast.</p>
+          <p class="feature-desc">Filter by academic discipline — Engineering, Social Sciences, Medicine, CS, and more.
+            Alphabetical jump bar makes switching fast.</p>
         </div>
 
         <div class="feature-card feature-card--wide" id="feature-sources">
           <h3 class="feature-title">Multi-source feed</h3>
-          <p class="feature-desc">Pulls from YÖKTez, OpenAlex, Semantic Scholar, CORE, and Crossref in one unified experience. Switch your preferred source from Settings.</p>
+          <p class="feature-desc">Pulls from YÖKTez, OpenAlex, Semantic Scholar, CORE, and Crossref in one unified
+            experience. Switch your preferred source from Settings.</p>
           <div class="source-chips">
             <span class="source-chip">YÖKTez</span>
             <span class="source-chip">OpenAlex</span>
@@ -105,15 +117,18 @@
     <div class="container">
       <div class="section-header">
         <h2 class="section-title">Progressive disclosure<br>by design</h2>
-        <p class="section-desc">Teaser first, abstract on demand, full paper one tap further. Depth is available without being required.</p>
+        <p class="section-desc">Teaser first, abstract on demand, full paper one tap further. Depth is available without
+          being required.</p>
       </div>
 
       <div class="showcase-tabs" role="tablist" aria-label="App screens">
         <button class="tab active" role="tab" id="tab-feed" aria-selected="true" data-target="panel-feed">Feed</button>
         <button class="tab" role="tab" id="tab-topics" aria-selected="false" data-target="panel-topics">Topics</button>
         <button class="tab" role="tab" id="tab-likes" aria-selected="false" data-target="panel-likes">Likes</button>
-        <button class="tab" role="tab" id="tab-abstract" aria-selected="false" data-target="panel-abstract">Abstract</button>
-        <button class="tab" role="tab" id="tab-sources" aria-selected="false" data-target="panel-sources">Sources</button>
+        <button class="tab" role="tab" id="tab-abstract" aria-selected="false"
+          data-target="panel-abstract">Abstract</button>
+        <button class="tab" role="tab" id="tab-sources" aria-selected="false"
+          data-target="panel-sources">Sources</button>
       </div>
 
       <div class="showcase-panels">
@@ -129,7 +144,8 @@
           </div>
           <div class="panel-info">
             <h3 class="panel-title">The vertical feed</h3>
-            <p class="panel-desc">Each full-screen card shows a thesis title, authors, source, publication year, a teaser of the abstract, and keyword chips. Swipe up to advance, swipe down to revisit.</p>
+            <p class="panel-desc">Each full-screen card shows a thesis title, authors, source, publication year, a
+              teaser of the abstract, and keyword chips. Swipe up to advance, swipe down to revisit.</p>
             <ul class="panel-bullets">
               <li>Full-bleed contextual background image</li>
               <li>Snap-scroll with haptic feedback</li>
@@ -147,7 +163,8 @@
           </div>
           <div class="panel-info">
             <h3 class="panel-title">Browse by topic</h3>
-            <p class="panel-desc">Tap "All topics" to open the topic picker. Filter by academic discipline with an A–Z jump bar for fast navigation.</p>
+            <p class="panel-desc">Tap "All topics" to open the topic picker. Filter by academic discipline with an A–Z
+              jump bar for fast navigation.</p>
             <ul class="panel-bullets">
               <li>Dozens of academic disciplines</li>
               <li>A–Z jump navigation</li>
@@ -165,7 +182,8 @@
           </div>
           <div class="panel-info">
             <h3 class="panel-title">Your library</h3>
-            <p class="panel-desc">Every hearted paper lands in the Likes tab — title, authors, year, and source. Tap to remove or dive back in with a single press.</p>
+            <p class="panel-desc">Every hearted paper lands in the Likes tab — title, authors, year, and source. Tap to
+              remove or dive back in with a single press.</p>
             <ul class="panel-bullets">
               <li>Persisted in local storage</li>
               <li>One-tap remove</li>
@@ -186,7 +204,8 @@
           </div>
           <div class="panel-info">
             <h3 class="panel-title">Full abstracts &amp; papers</h3>
-            <p class="panel-desc">Tap "Read abstract" to reveal the full text in a bottom sheet. Tap the document icon to open the original paper in a browser.</p>
+            <p class="panel-desc">Tap "Read abstract" to reveal the full text in a bottom sheet. Tap the document icon
+              to open the original paper in a browser.</p>
             <ul class="panel-bullets">
               <li>Full abstract in a bottom sheet</li>
               <li>Open source PDF in browser</li>
@@ -204,7 +223,8 @@
           </div>
           <div class="panel-info">
             <h3 class="panel-title">Choose your source</h3>
-            <p class="panel-desc">Switch between OpenAlex, Semantic Scholar, CORE, or Crossref from Settings. Each provider surfaces different research.</p>
+            <p class="panel-desc">Switch between OpenAlex, Semantic Scholar, CORE, or Crossref from Settings. Each
+              provider surfaces different research.</p>
             <ul class="panel-bullets">
               <li>5 open-access academic providers</li>
               <li>No account needed</li>
@@ -221,7 +241,8 @@
     <div class="container">
       <div class="section-header">
         <h2 class="section-title">Open-access APIs,<br>unified in one feed</h2>
-        <p class="section-desc">Rather than scraping a single database, TezTok integrates six open-access APIs — enabling cross-domain discovery across disciplines.</p>
+        <p class="section-desc">Rather than scraping a single database, TezTok integrates six open-access APIs —
+          enabling cross-domain discovery across disciplines.</p>
       </div>
       <div class="sources-grid">
         <div class="source-card" id="source-yoktez">
@@ -229,7 +250,9 @@
           <div class="source-info">
             <span class="source-name">YÖKTez</span>
             <span class="source-detail">Turkish national thesis database</span>
-            <span class="source-req" data-tooltip="YÖKTez has no public API. TezTok uses a separate Express server to scrape it — you’ll need to run that server locally.">Back-end scraper server needed</span>
+            <span class="source-req"
+              data-tooltip="YÖKTez has no public API. TezTok uses a separate Express server to scrape it — you’ll need to run that server locally.">Back-end
+              scraper server needed</span>
           </div>
         </div>
         <div class="source-card" id="source-openalex">
@@ -244,7 +267,9 @@
           <div class="source-info">
             <span class="source-name">Semantic Scholar</span>
             <span class="source-detail">Academic search by the Allen Institute for AI</span>
-            <span class="source-req" data-tooltip="Register for a free Semantic Scholar API key and add it to the config. Without it, requests are heavily rate-limited.">API key needed</span>
+            <span class="source-req"
+              data-tooltip="Register for a free Semantic Scholar API key and add it to the config. Without it, requests are heavily rate-limited.">API
+              key needed</span>
           </div>
         </div>
 
@@ -253,7 +278,9 @@
           <div class="source-info">
             <span class="source-name">CORE</span>
             <span class="source-detail">Largest open-access research aggregator</span>
-            <span class="source-req" data-tooltip="Register for a free CORE API key and add it to the config. Without it, access to full results is restricted.">API key needed</span>
+            <span class="source-req"
+              data-tooltip="Register for a free CORE API key and add it to the config. Without it, access to full results is restricted.">API
+              key needed</span>
           </div>
         </div>
         <div class="source-card" id="source-crossref">
@@ -272,13 +299,15 @@
     <div class="container">
       <div class="section-header">
         <h2 class="section-title">Why this matters</h2>
-        <p class="section-desc">The problem is not access — it's discovery. Most academic databases are built for targeted search, not for passive exposure to new ideas.</p>
+        <p class="section-desc">The problem is not access — it's discovery. Most academic databases are built for
+          targeted search, not for passive exposure to new ideas.</p>
       </div>
       <div class="why-grid">
         <div class="why-card" id="why-problem">
           <h3 class="why-title">The problem</h3>
           <ul class="why-list">
-            <li>Academic databases (PubMed, JSTOR, Google Scholar) optimise for known-item search, not serendipitous discovery.</li>
+            <li>Academic databases (PubMed, JSTOR, Google Scholar) optimise for known-item search, not serendipitous
+              discovery.</li>
             <li>Casual exposure to research outside one's immediate field is structurally low for non-specialists.</li>
             <li>Dense abstracts create a front-loaded cognitive barrier that discourages exploratory reading.</li>
           </ul>
@@ -286,16 +315,20 @@
         <div class="why-card" id="why-hypothesis">
           <h3 class="why-title">The hypothesis</h3>
           <ul class="why-list">
-            <li>Short-form interaction patterns (vertical swipe, progressive disclosure) may reduce the perceived entry cost of engaging with academic content.</li>
-            <li>Aggregating multiple open-access APIs into one feed may broaden cross-disciplinary exposure compared to single-source browsing.</li>
+            <li>Short-form interaction patterns (vertical swipe, progressive disclosure) may reduce the perceived entry
+              cost of engaging with academic content.</li>
+            <li>Aggregating multiple open-access APIs into one feed may broaden cross-disciplinary exposure compared to
+              single-source browsing.</li>
           </ul>
         </div>
         <div class="why-card" id="why-framing">
           <h3 class="why-title">Research framing</h3>
           <ul class="why-list">
             <li><strong>Domain:</strong> Human–Computer Interaction, Information Systems, EdTech</li>
-            <li><strong>Design pattern studied:</strong> Progressive disclosure + snap-scroll applied to long-form content</li>
-            <li><strong>Key open question:</strong> Does interface familiarity (social-media-like UX) transfer to willingness to engage with unfamiliar academic domains?</li>
+            <li><strong>Design pattern studied:</strong> Progressive disclosure + snap-scroll applied to long-form
+              content</li>
+            <li><strong>Key open question:</strong> Does interface familiarity (social-media-like UX) transfer to
+              willingness to engage with unfamiliar academic domains?</li>
           </ul>
         </div>
       </div>
@@ -309,8 +342,12 @@
         <h2 class="download-title">Explore the project</h2>
         <p class="download-desc">Free, open-source, and runs on any device. Clone the repo to run it locally.</p>
         <div class="download-options">
-          <a href="https://github.com/teztokapp/app" target="_blank" rel="noopener noreferrer" class="btn-primary" id="download-github-btn">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <a href="https://github.com/teztokapp/app" target="_blank" rel="noopener noreferrer" class="btn-primary"
+            id="download-github-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+            </svg>
             View on GitHub
           </a>
         </div>
@@ -323,11 +360,20 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-inner">
-        <a href="#" class="footer-logo">
-          <span class="logo-tez">Tez</span><span class="logo-tok">Tok</span>
-        </a>
+        <div class="footer-top">
+          <a href="#" class="footer-logo">
+            <span class="logo-tez">Tez</span><span class="logo-tok">Tok</span>
+          </a>
+          <div class="lang-switcher footer-lang">
+            <select class="lang-select" onchange="setLang(this.value)">
+              <option value="en">English</option>
+              <option value="tr">Türkçe</option>
+            </select>
+          </div>
+        </div>
         <p class="footer-tagline">A mobile-first interface for academic research discovery.</p>
-        <p class="footer-note">Research content is sourced from open-access academic APIs. Always verify claims against the original paper.</p>
+        <p class="footer-note">Research content is sourced from open-access academic APIs. Always verify claims against
+          the original paper.</p>
       </div>
     </div>
   </footer>
@@ -335,4 +381,5 @@
   <script src="i18n.js"></script>
   <script src="script.js"></script>
 </body>
+
 </html>
