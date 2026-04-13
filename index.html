@@ -24,11 +24,16 @@
       <ul class="nav-links">
         <li><a href="#features">Features</a></li>
         <li><a href="#why">Motivation</a></li>
-        <li><a href="#evaluation">Evaluation</a></li>
         <li><a href="#screenshots">App</a></li>
         <li><a href="#sources">Sources</a></li>
       </ul>
       <a href="#download" class="nav-cta" id="nav-cta-btn">View on GitHub</a>
+
+      <div class="lang-switcher">
+        <button id="lang-en" onclick="setLang('en')">EN</button>
+        <span class="lang-divider">|</span>
+        <button id="lang-tr" onclick="setLang('tr')">TR</button>
+      </div>
     </div>
   </nav>
 
@@ -296,39 +301,6 @@
     </div>
   </section>
 
-  <!-- Evaluation -->
-  <section class="evaluation-section" id="evaluation">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Preliminary observations</h2>
-        <p class="section-desc">An informal usability review with a small group of graduate students, comparing scrolling-based discovery against traditional database search.</p>
-      </div>
-      <div class="eval-grid">
-        <div class="eval-card" id="eval-method">
-          <p class="eval-text">Five graduate students were asked to find three papers outside their primary field — once using TezTok, once using a standard database search interface. Sessions were observed and participants were asked to describe their process.</p>
-        </div>
-        <div class="eval-cards-row">
-          <div class="eval-stat-card" id="eval-stat-1">
-            <span class="eval-stat-number">5</span>
-            <span class="eval-stat-label">Participants</span>
-          </div>
-          <div class="eval-stat-card" id="eval-stat-2">
-            <span class="eval-stat-number">2×</span>
-            <span class="eval-stat-label">More papers opened via scroll interface</span>
-          </div>
-          <div class="eval-stat-card" id="eval-stat-3">
-            <span class="eval-stat-number">4/5</span>
-            <span class="eval-stat-label">Preferred browsing over traditional search</span>
-          </div>
-        </div>
-        <div class="eval-card eval-card--insight" id="eval-insight">
-          <p class="eval-text">Participants engaged with a larger number of papers in the scroll condition before deciding whether to read the abstract — consistent with the progressive disclosure hypothesis.</p>
-          <p class="eval-caveat">⚠ Small, informal pilot. Observations are directional, not statistically significant. A proper study would require a larger sample and controlled conditions.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- CTA -->
   <section class="download" id="download">
     <div class="container">
@@ -359,6 +331,7 @@
     </div>
   </footer>
 
+  <script src="i18n.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
