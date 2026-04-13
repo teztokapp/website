@@ -30,9 +30,10 @@
       <a href="#download" class="nav-cta" id="nav-cta-btn">View on GitHub</a>
 
       <div class="lang-switcher">
-        <button id="lang-en" onclick="setLang('en')">EN</button>
-        <span class="lang-divider">|</span>
-        <button id="lang-tr" onclick="setLang('tr')">TR</button>
+        <select id="lang-select" class="lang-select" onchange="setLang(this.value)">
+          <option value="en">English (EN)</option>
+          <option value="tr">Türkçe (TR)</option>
+        </select>
       </div>
     </div>
   </nav>

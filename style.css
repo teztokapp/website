@@ -101,28 +101,27 @@ img { display: block; max-width: 100%; }
 .lang-switcher {
   display: flex;
   align-items: center;
-  gap: 8px;
+}
+.lang-select {
   background: var(--bg2);
-  padding: 6px 12px;
-  border-radius: 100px;
+  color: var(--text2);
   border: 1px solid var(--border);
-}
-.lang-switcher button {
-  background: none;
-  border: none;
-  color: var(--text3);
-  font-size: 0.75rem;
-  font-weight: 700;
-  cursor: pointer;
-  padding: 2px 4px;
-  transition: color 0.15s;
-}
-.lang-switcher button:hover { color: var(--text2); }
-.lang-switcher button.active { color: var(--text); }
-.lang-divider {
-  color: var(--border);
+  border-radius: 100px;
+  padding: 6px 12px;
+  padding-right: 32px;
   font-size: 0.8rem;
-  user-select: none;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23555555' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 14px;
+}
+.lang-select:focus {
+  outline: none;
+  border-color: var(--text3);
 }
 
 /* ── Hero ──────────────────────────────────────── */
