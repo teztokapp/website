@@ -1,4 +1,3 @@
-
 const translations = {
   en: {
     "nav-features": "Features",
@@ -30,22 +29,48 @@ const translations = {
     "panel-feed-desc": "Each full-screen card shows a thesis title, authors, source, publication year, a teaser of the abstract, and keyword chips. Swipe up to advance, swipe down to revisit.",
     "panel-topics-title": "Browse by topic",
     "panel-topics-desc": "Tap \"All topics\" to open the topic picker. Filter by academic discipline with an A–Z jump bar for fast navigation.",
-    "panel-likes-title": "Your reading list",
-    "panel-likes-desc": "Tap the heart on any card to save it. The Likes tab stores all your bookmarked papers offline.",
-    "panel-abstract-title": "Abstract on demand",
-    "panel-abstract-desc": "Tap \"Read abstract\" to pull up a bottom sheet with the full summary, allowing you to gauge relevance before opening the PDF.",
-    "panel-sources-title": "Configure your sources",
-    "panel-sources-desc": "Toggle between APIs from the Settings menu. The interface adapts dynamically depending on what your chosen source supports.",
-    "sec-why-title": "Why build this?",
-    "sec-why-desc": "Academic discovery is largely confined to desktop browsers. TezTok is an experiment in adapting modern mobile interactions to research.",
-    "card-friction-title": "Reducing friction",
-    "card-friction-desc": "Traditional database searches require intent. TezTok provides a zero-setup feed, making discovery a leaner, more casual process.",
-    "card-mobile-title": "Mobile ergonomics",
-    "card-mobile-desc": "Large target areas, gestural navigation, and haptic feedback make flipping through abstracts feel as effortless as social media.",
+    "panel-likes-title": "Your library",
+    "panel-likes-desc": "Every hearted paper lands in the Likes tab — title, authors, year, and source. Tap to remove or dive back in with a single press.",
+    "panel-abstract-title": "Full abstracts &amp; papers",
+    "panel-abstract-desc": "Tap \"Read abstract\" to reveal the full text in a bottom sheet. Tap the document icon to open the original paper in a browser.",
+    "panel-sources-title": "Choose your source",
+    "panel-sources-desc": "Switch between OpenAlex, Semantic Scholar, CORE, or Crossref from Settings. Each provider surfaces different research.",
+    
+    "sec-sources-title": "Open-access APIs,<br>unified in one feed",
+    "sec-sources-desc": "Rather than scraping a single database, TezTok integrates six open-access APIs — enabling cross-domain discovery across disciplines.",
+    "src-yok-title": "YÖKTez",
+    "src-yok-desc": "Turkish national thesis database",
+    "src-yok-req": "Back-end scraper server needed",
+    "src-oa-title": "OpenAlex",
+    "src-oa-desc": "250M+ scholarly works, fully open and free",
+    "src-ss-title": "Semantic Scholar",
+    "src-ss-desc": "Academic search by the Allen Institute for AI",
+    "src-ss-req": "API key needed",
+    "src-core-title": "CORE",
+    "src-core-desc": "Largest open-access research aggregator",
+    "src-core-req": "API key needed",
+    "src-cr-title": "Crossref",
+    "src-cr-desc": "100M+ DOI-linked scholarly metadata records",
+
+    "sec-why-title": "Why this matters",
+    "sec-why-desc": "The problem is not access — it's discovery. Most academic databases are built for targeted search, not for passive exposure to new ideas.",
+    "why-prob-title": "The problem",
+    "why-prob-l1": "Academic databases (PubMed, JSTOR, Google Scholar) optimise for known-item search, not serendipitous discovery.",
+    "why-prob-l2": "Casual exposure to research outside one's immediate field is structurally low for non-specialists.",
+    "why-prob-l3": "Dense abstracts create a front-loaded cognitive barrier that discourages exploratory reading.",
+    "why-hypo-title": "The hypothesis",
+    "why-hypo-l1": "Short-form interaction patterns (vertical swipe, progressive disclosure) may reduce the perceived entry cost of engaging with academic content.",
+    "why-hypo-l2": "Aggregating multiple open-access APIs into one feed may broaden cross-disciplinary exposure compared to single-source browsing.",
+    "why-fram-title": "Research framing",
+    "why-fram-l1": "<strong>Domain:</strong> Human–Computer Interaction, Information Systems, EdTech",
+    "why-fram-l2": "<strong>Design pattern studied:</strong> Progressive disclosure + snap-scroll applied to long-form content",
+    "why-fram-l3": "<strong>Key open question:</strong> Does interface familiarity (social-media-like UX) transfer to willingness to engage with unfamiliar academic domains?",
+
     "sec-explore-title": "Explore the project",
     "sec-explore-desc": "Free, open-source, and runs on any device. Clone the repo to run it locally.",
     "footer-tagline": "A mobile-first interface for academic research discovery.",
-    "footer-note": "Research content is sourced from open-access academic APIs. Always verify claims against the original paper."
+    "footer-note": "Research content is sourced from open-access academic APIs. Always verify claims against the original paper.",
+    "download-github": "View on GitHub"
   },
   tr: {
     "nav-features": "Özellikler",
@@ -78,21 +103,47 @@ const translations = {
     "panel-topics-title": "Konulara göz atın",
     "panel-topics-desc": "Konu seçiciyi açmak için \"Tüm konular\" seçeneğine dokunun. Hızlı gezinme için A–Z atlama çubuğu ile belirli bir akademik disipline göre filtreleyin.",
     "panel-likes-title": "Okuma listeniz",
-    "panel-likes-desc": "Kaydetmek için herhangi bir karttaki kalbe dokunun. Beğenilenler sekmesi, kaydettiğiniz tüm makaleleri çevrimdışı depolar.",
+    "panel-likes-desc": "Kaydetmek için herhangi bir makaledeki kalbe dokunun. Beğenilenler sekmesi tüm seçtiğiniz makaleleri saklar.",
     "panel-abstract-title": "Özete hızlı erişim",
-    "panel-abstract-desc": "Pdf'i açmadan önce makalenin uygunluğunu ölçmek için ana özeti kaplayan alt paneli yukarı çekip okuyabilirsiniz.",
+    "panel-abstract-desc": "Tam metni okumadan önce alt panelden makalenin özetini görüntülemek için \"Özeti oku\" seçeneğine dokunun.",
     "panel-sources-title": "Kaynakları yapılandırın",
-    "panel-sources-desc": "Ayarlar menüsünden API'ler arasında geçiş yapabilirsiniz. Arayüzünüz, seçtiğiniz kaynağın sağladığı özelliklere göre dinamik bir şekilde uyum sağlar.",
-    "sec-why-title": "Neden bunu oluşturduk?",
-    "sec-why-desc": "Akademik keşif büyük ölçüde masaüstü tarayıcılarla sınırlıdır. TezTok, modern mobil etkileşimleri akademik araştırmalara uyarlayan bir deneydir.",
-    "card-friction-title": "Zorlukları azaltmak",
-    "card-friction-desc": "Geleneksel veritabanı aramaları için spesifik bir amaca ihtiyacınız vardır. TezTok kurulum gerektirmeyen bir akış sunarak keşfetmeyi daha sadeleştirilmiş ve rahat bir süreç hâline getirir.",
-    "card-mobile-title": "Mobil ergonomi",
-    "card-mobile-desc": "Büyük dokunma alanları, jest tabanlı navigasyon ve haptik geri bildirim, makale özetlerinde geçiş yapmayı sosyal medya gibi zahmetsiz hissettiriyor.",
+    "panel-sources-desc": "Ayarlar menüsünden API'ler arasında geçiş yapın. Seçtiğiniz kaynak neyi destekliyorsa o özellikleri görebilirsiniz.",
+    
+    "sec-sources-title": "Açık erişimli API'ler,<br>tek bir akışta",
+    "sec-sources-desc": "TezTok, tek bir veritabanını kazımak yerine altı farklı açık erişim API'sini bütünleştirerek çeşitli disiplinler arası keşiflere olanak tanır.",
+    "src-yok-title": "YÖKTez",
+    "src-yok-desc": "Türkiye ulusal tez merkezi veritabanı",
+    "src-yok-req": "Arka uç scraping sunucusu gerekir",
+    "src-oa-title": "OpenAlex",
+    "src-oa-desc": "250 Milyon+ akademik makale, tamamen açık ve ücretsiz",
+    "src-ss-title": "Semantic Scholar",
+    "src-ss-desc": "Allen Institute for AI tarafından sağlanan akademik arama",
+    "src-ss-req": "API anahtarı gerekir",
+    "src-core-title": "CORE",
+    "src-core-desc": "Dünyanın en büyük açık erişim araştırma toplayıcısı",
+    "src-core-req": "API anahtarı gerekir",
+    "src-cr-title": "Crossref",
+    "src-cr-desc": "100 Milyon+ DOI bağlantılı akademik üstveri kaydı",
+
+    "sec-why-title": "Neden önemli?",
+    "sec-why-desc": "Problem erişim değil, keşfetmek. Çoğu akademik veritabanı hedef odaklı arama için yapılmıştır, yeni fikirlerle tesadüfen karşılaşmak için değil.",
+    "why-prob-title": "Problem",
+    "why-prob-l1": "Akademik veritabanları (PubMed, JSTOR, Google Scholar vb.) tesadüfî keşiflerden ziyade bilinen bir şeyi aramaya odaklanır.",
+    "why-prob-l2": "Araştırmacıların kendi alanlarının dışındaki konulardaki çalışmalara maruz kalma ihtimali oldukça düşüktür.",
+    "why-prob-l3": "Yoğun özetler, okuma ve keşfetme motivasyonunu kıran bir bilişsel yük yaratır.",
+    "why-hypo-title": "Hipotez",
+    "why-hypo-l1": "Kısa formlu etkileşim desenleri (dikey kaydırma, kademeli bilgi gösterimi vb.) akademik içeriğe odaklanmak için gereken başlangıç maliyetini hafifletebilir.",
+    "why-hypo-l2": "Birden fazla açık erişimli API'yi tek bir akışta toplamak, tek kaynaklı platformlara kıyasla disiplinler arası keşif ihtimalini artırabilir.",
+    "why-fram-title": "Araştırma Çerçevesi",
+    "why-fram-l1": "<strong>Alan:</strong> İnsan-Bilgisayar Etkileşimi, Bilgi Sistemleri, Eğitim Teknolojileri",
+    "why-fram-l2": "<strong>İncelenen tasarım deseni:</strong> Uzun okuma içeriğine uygulanan kademeli gösterim ve ekran kaydırma modeli",
+    "why-fram-l3": "<strong>Temel açık soru:</strong> Tanıdık arayüzler (sosyal medya benzeri kullanım deneyimi), okuyucunun alışık olmadığı akademik alanlarla etkileşime girme isteğini artırabilir mi?",
+
     "sec-explore-title": "Projeyi keşfet",
     "sec-explore-desc": "Ücretsiz, açık kaynaklı ve her cihazda çalışır. Yerel bilgisayarında çalıştırmak için repoyu kopyalayabilirsin.",
     "footer-tagline": "Akademik araştırmaları keşfetmek için mobil öncelikli bir arayüz.",
-    "footer-note": "Araştırma içerikleri açık erişimli akademik API'lerden derlenmiştir. İddiaları daima orijinal makaleden teyit ediniz."
+    "footer-note": "Araştırma içerikleri açık erişimli akademik API'lerden derlenmiştir. İddiaları daima orijinal makaleden teyit ediniz.",
+    "download-github": "GitHub'da Gör"
   }
 };
 
@@ -133,12 +184,37 @@ const domMap = {
   "panel-abstract-desc": () => document.querySelector('#panel-abstract .panel-desc'),
   "panel-sources-title": () => document.querySelector('#panel-sources .panel-title'),
   "panel-sources-desc": () => document.querySelector('#panel-sources .panel-desc'),
+
+  "sec-sources-title": () => document.querySelector('#sources .section-title'),
+  "sec-sources-desc": () => document.querySelector('#sources .section-desc'),
+  "src-yok-title": () => document.querySelector('#source-yoktez .source-name'),
+  "src-yok-desc": () => document.querySelector('#source-yoktez .source-detail'),
+  "src-yok-req": () => document.querySelector('#source-yoktez .source-req'),
+  "src-oa-title": () => document.querySelector('#source-openalex .source-name'),
+  "src-oa-desc": () => document.querySelector('#source-openalex .source-detail'),
+  "src-ss-title": () => document.querySelector('#source-semantic .source-name'),
+  "src-ss-desc": () => document.querySelector('#source-semantic .source-detail'),
+  "src-ss-req": () => document.querySelector('#source-semantic .source-req'),
+  "src-core-title": () => document.querySelector('#source-core .source-name'),
+  "src-core-desc": () => document.querySelector('#source-core .source-detail'),
+  "src-core-req": () => document.querySelector('#source-core .source-req'),
+  "src-cr-title": () => document.querySelector('#source-crossref .source-name'),
+  "src-cr-desc": () => document.querySelector('#source-crossref .source-detail'),
+
   "sec-why-title": () => document.querySelector('#why .section-title'),
   "sec-why-desc": () => document.querySelector('#why .section-desc'),
-  "card-friction-title": () => document.querySelector('#why-friction .why-card-title'),
-  "card-friction-desc": () => document.querySelector('#why-friction .why-card-desc'),
-  "card-mobile-title": () => document.querySelector('#why-mobile .why-card-title'),
-  "card-mobile-desc": () => document.querySelector('#why-mobile .why-card-desc'),
+  "why-prob-title": () => document.querySelector('#why-problem .why-title'),
+  "why-prob-l1": () => document.querySelectorAll('#why-problem .why-list li')[0],
+  "why-prob-l2": () => document.querySelectorAll('#why-problem .why-list li')[1],
+  "why-prob-l3": () => document.querySelectorAll('#why-problem .why-list li')[2],
+  "why-hypo-title": () => document.querySelector('#why-hypothesis .why-title'),
+  "why-hypo-l1": () => document.querySelectorAll('#why-hypothesis .why-list li')[0],
+  "why-hypo-l2": () => document.querySelectorAll('#why-hypothesis .why-list li')[1],
+  "why-fram-title": () => document.querySelector('#why-framing .why-title'),
+  "why-fram-l1": () => document.querySelectorAll('#why-framing .why-list li')[0],
+  "why-fram-l2": () => document.querySelectorAll('#why-framing .why-list li')[1],
+  "why-fram-l3": () => document.querySelectorAll('#why-framing .why-list li')[2],
+
   "sec-explore-title": () => document.querySelector('.download-title'),
   "sec-explore-desc": () => document.querySelector('.download-desc'),
   "footer-tagline": () => document.querySelector('.footer-tagline'),
@@ -162,7 +238,6 @@ function setLang(lang) {
   for (const key in domMap) {
     const el = domMap[key]();
     if (el && strings[key]) {
-      // Small exception for hero-github btn to keep SVG if we target proper inner content:
       if (key === 'nav-cta-btn' || key === 'hero-see-app-btn') {
         el.innerHTML = strings[key];
       } else if (key === 'hero-github-btn') {
@@ -172,9 +247,18 @@ function setLang(lang) {
       }
     }
   }
+
+  const downloadGithubBtn = document.getElementById('download-github-btn');
+  if (downloadGithubBtn) {
+    downloadGithubBtn.innerHTML = \`
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+            </svg>
+            \${strings["download-github"]}
+    \`;
+  }
 }
 
-// Auto detect on load
 document.addEventListener('DOMContentLoaded', () => {
   const saved = localStorage.getItem('teztok-lang');
   let lang = 'en';
