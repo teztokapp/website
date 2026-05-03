@@ -31,6 +31,46 @@ body {
 a { color: inherit; text-decoration: none; }
 img { display: block; max-width: 100%; }
 
+.underline {
+  background-image: linear-gradient(to right, #111, #111);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 3px;
+}
+
+@keyframes drawUnderline {
+  from { background-size: 0% 3px; }
+  to { background-size: 100% 3px; }
+}
+
+/* ── Phone Mockup ── */
+.phone-mockup {
+  width: 280px;
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+  background: #111;
+  border-radius: 40px;
+  padding: 12px;
+  border: 4px solid #eaeaea;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+.phone-screen {
+  background: #000;
+  border-radius: 28px;
+  overflow: hidden;
+  position: relative;
+  aspect-ratio: 9 / 19.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.phone-screen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* ── Container ─────────────────────────────────── */
 .container {
   max-width: 1100px;
@@ -153,8 +193,14 @@ img { display: block; max-width: 100%; }
 .hero-title {
   font-size: clamp(2.4rem, 4.5vw, 3.8rem);
   font-weight: 800;
-  line-height: 1.06;
+  line-height: 1.3;
   letter-spacing: -0.04em;
+  text-transform: lowercase;
+}
+
+.hero-title .underline {
+  background-size: 0% 3px;
+  animation: drawUnderline 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0.4s forwards;
 }
 
 .hero-subtitle {
@@ -264,9 +310,10 @@ section { padding: 100px 0; }
 .section-title {
   font-size: clamp(1.8rem, 3.5vw, 2.6rem);
   font-weight: 800;
-  line-height: 1.1;
+  line-height: 1.35;
   letter-spacing: -0.03em;
   margin-bottom: 16px;
+  text-transform: lowercase;
 }
 
 .section-desc {
@@ -382,47 +429,13 @@ section { padding: 100px 0; }
   display: grid;
 }
 
-/* Panel phones */
+/* Panel phones (overridden for laptop mockup) */
 .panel-phones {
   position: relative;
-  height: 540px;
+  width: 100%;
 }
 
-.panel-phone {
-  border-radius: 36px;
-  overflow: hidden;
-  border: 1px solid var(--border);
-  background: #fff;
-  position: absolute;
-}
-
-.panel-phone--primary {
-  width: 230px;
-  height: 500px;
-  z-index: 2;
-  left: 50%;
-  top: 50%;
-  transform: translate(-60%, -50%);
-  box-shadow: 0 16px 48px rgba(0,0,0,0.1);
-}
-
-.panel-phone--secondary {
-  width: 190px;
-  height: 420px;
-  z-index: 1;
-  left: 50%;
-  top: 50%;
-  transform: translate(8%, -50%) rotate(5deg);
-  opacity: 0.5;
-}
-
-.panel-phone--solo {
-  width: 250px;
-  height: 540px;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
+.panel-phone { display: none; } /* hide old phones */
 
 .panel-phone-img {
   width: 100%;
@@ -793,7 +806,7 @@ section { padding: 100px 0; }
   .feature-card--wide { grid-column: span 2; }
 
   .showcase-panel.active { grid-template-columns: 1fr; }
-  .panel-phones { height: 460px; }
+  .panel-phones { height: auto; }
 
   .sources-grid { grid-template-columns: repeat(2, 1fr); }
   .why-grid { grid-template-columns: 1fr; }
